@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url(../image/home.jpg);
+	background-size: cover;
+	height: 100vh;
+
+}
+
+h1,h2{
+	font-family: 'Oswald', sans-serif;
+}
+
+.all .center{
+	position: absolute;
+	top: 50%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	font-family: sans-serif;
+	user-select: none;
+}
+
+.neon{
+	position: absolute;
+	top: 50%;
+	left: 50%
+	transform: translate(-50%, -50%);
+	margin: 0;
+	padding: 0 20px;
+	font-size: 70px;
+	color: white;
+	text-shadow: 0 0 20px #ff005b;
+	font-weight: bold;
+}
+
+.neon:after{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0 20px;
+	z-index: -1;
+	color: #ff005b;
+	filter: blur(15px);
+}
+
+.neon:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fe3a80;
+	z-index: -2;
+	opacity: .5;
+	filter: blur(40px);
+}
+
+.center h2{
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	width: 900px;
+	margin-top: 300px;
+	text-align: center;
+	text-shadow: 0 0 20px #ff005b;
+}

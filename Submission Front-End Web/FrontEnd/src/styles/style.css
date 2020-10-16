@@ -1,0 +1,70 @@
+@import "appbar.css";
+.jumbotron{
+   font-size: 30px;
+   padding: 50px;
+   text-align: center;
+   background-color: #8FBC8F;
+}
+
+#input{
+    outline: none;
+    width: 600px;
+    position: center;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.formBag{
+    padding-top: 5%;
+}
+
+#search{
+    margin-top: 3%;
+    color: #F0F8FF;
+    background-color: #FF4500;
+    font-weight: bolder;
+    text-align: center;
+    padding: 6px 12px;
+    font-size: 16px;
+    line-height: normal;
+}
+
+#centered_item{ 
+    display: flex; 
+    justify-content: center; 
+}
+
+img:hover{
+    transform: scale(1.2);
+    opacity: 0.5;
+}
+
+.cover{
+    color:#F0F8FF;
+    display: block;
+    margin-top: 5%;
+}
+
+h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 30px;
+	text-transform: uppercase;
+	/* background: linear-gradient(to right, #30CFD0, #008000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; */
+}
+
+body{
+	align-items: center;
+	justify-content: center;
+}
+
+footer{
+	letter-spacing: 3px;
+	padding: 20px;
+	background-color: #AFEEEE;
+    text-align: center;
+    font-weight: bold;
+}
+

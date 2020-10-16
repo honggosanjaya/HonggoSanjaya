@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pendalaman CSS</title>
+	<style>
+		body{
+			max-width: 800px;
+			max-height: 1000px;
+		}
+		h2{
+			color:yellow;
+		}
+		.red {
+           color: red;
+       }
+ 
+       .skyblue-bg {
+           background-color: skyblue;
+       }
+ 
+       .fancy {
+           font-weight: bold;
+           text-shadow: 4px 4px 3px #77f;
+       }
+       p.fancy {
+           text-shadow: 4px 4px 3px #00c8eb;
+       }
+       a[href] {
+           color: blue;
+           text-decoration: none;
+       }
+/*       penggunaan id*/
+       #special {
+          background-color: skyblue;
+      }
+      /* Rule akan diterapkan pada elemen paragraf yang berada tepat setelah elemen img */
+       img + p {
+           color: green;
+       }
+       /* Rule akan diterapkan pada elemen paragraf yang merupakan child (yg ada di dalam) dari elemen div */
+     /*  syarat: anak elemen secara langsung*/
+       div > p {
+           background-color: yellow;
+       }
+       /* Rule akan diterapkan pada elemen paragraf yang merupakan turunan dari elemen div (walauoun bukan anak langsung) */
+       div p {
+           background-color: Cornsilk;
+       }
+       /* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+		a:link {
+		   color: red;
+		}
+		 
+		/* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+		a:visited {
+		   color: green;
+		}
+		 
+		/* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+		a:hover {
+		   color: pink;
+		}
+		 
+		/* rule akan diterapkan pada sebuah tautan ketika ditekan */
+		a:active {
+		   color:orange;
+		}
+		/* Rule styling akan diterapkan pada karakter pertama disebuah paragraf */
+       p::first-letter {
+           font-size: 32px;
+           font-weight: bold;
+           color: saddlebrown;
+       }
+
+       .font{
+       	    font-family : "Open Sans", Verdana, sans-serif;
+			font-size : 20px;
+			font-weight : bold;
+			font-style : italic;
+			font-variant : small-caps;
+       }
+       .text{
+       		line-height: 2em;
+       		text-indent: 2em;
+       		text-align: center;
+       		text-decoration: underline;
+       		text-transform: uppercase;
+       		letter-spacing: 4px;
+       		word-spacing: 1.5em;
+       		text-shadow: 1px 1px 3px #666666;
+       }
+       div#opacity {
+		   background-color: Cornsilk;
+		   opacity: 0.5;
+		}
+		.border{
+			border-top-width: 2px;
+			border-right-width: 1px;
+			border-bottom-width: 1px;
+		 	border-left-width: 2px;
+			border-width: 2px 1px 1px 2px; /*top right bottom left*/
+			border-top-style: solid;
+		   border-right-style: dotted;
+		   border-bottom-style: groove;
+		   border-left-style: double;
+		 
+		   border-width: 4px;
+		   border-color: red;
+		   width: 200px;
+		   height: 50px;
+		   border-color: red;
+		   border-radius: 10px;
+		}
+		.margin{
+			margin: 10px 15px 20px 25px;/*top right bottom left*/
+		}
+		.Kotak_center {
+           margin: 0 auto;
+       }
+
+/*ini buat bg color*/
+		div#content {
+           background-color: rgb(200, 200, 200);
+           padding: 20px 15px;
+       }
+ 
+       #content > h2 {
+           background-color: #4c5450;
+           padding: 15px;
+           color: white;
+       }
+ 
+       #content > h3 {
+           background-color: #60d0a8;
+           padding: 15px;
+           color: white;
+       }
+ 
+       #content > p {
+           background-color: hsl(56, 62%, 85%);
+           padding: 20px;
+       }
+
+
+
+	</style>
+</head>
+<body class="margin">
+	<!-- penulisan mencakup 2 kelas tinggal di spasi aja -->
+	<h1 class="red skyblue-bg">Heading dengan teks berwarna merah dan background biru langit</h1> 
+	<h2>ini warnanya kuning</h2>
+	<p class="red fancy">Paragraf dengan teks berwarna merah dan bergaya fancy</p>
+	<h1 class="fancy">Heading dengan teks bergaya fancy</h1>
+	<p class="fancy">Paragraf dengan teks bergaya fancy</p>
+	<div id="special">
+	   <p>Ini merupakan konten di dalam sebuah div yang diberi id special.</p>
+	</div>
+	<p class="font">halo ini saya mencoba properti font</p>
+	<p class="text">halo ini saya mencoba properti text</p>
+	<div id="opacity">
+		<p>ini 50% transparan</p>
+	</div>
+
+<!-- bagian bg color -->
+	<div id="content">
+	   <h2>Lorem Ipsum</h2>
+	   <h3>Dolor sit amet lorem ipsum</h3>
+	   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus officiis perspiciatis quidem ratione? Distinctio eos ex expedita iusto necessitatibus velit, veritatis. Aliquid, debitis dignissimos in iusto magnam nulla sed tempora.</p>
+	</div>
+
+</body>
+</html>
+
+
+

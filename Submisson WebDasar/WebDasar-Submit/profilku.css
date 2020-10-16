@@ -1,0 +1,100 @@
+#header{
+	text-align: center;
+}
+body{
+	margin: 20px;
+}
+div.polaroid {
+  width: 400px;
+  padding:10px;
+  background-color: white;
+  box-shadow: 8px 8px 5px #444;
+}
+
+div.rotate_right {
+  float: left;
+  -ms-transform: rotate(8deg); 
+  -webkit-transform: rotate(8deg); 
+  transform: rotate(8deg);
+}
+
+div.rotate_left {
+  float: left;
+  -ms-transform: rotate(-8deg); 
+  -webkit-transform: rotate(-8deg); 
+  transform: rotate(-8deg);
+}
+
+.container{
+  display: flex;
+  width: 800px;
+  height: 400px;
+  background-color: #98FB98;
+  border: 4px dotted black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.kotak{
+  background-color: #FFA500;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.kolom-satu{
+  flex-grow: 1;
+}
+
+.kolom-dua{
+  flex-grow: 2;
+}
+
+.kolom-tiga{
+  flex-grow: 1;
+}
+
+.lingkaran{
+  width: 200px;
+  height: 200px;
+  background: #dac52c;
+  border-radius: 100%;
+}
+
+h1{
+  font-size: 100px;
+  color: #DB7093;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer{
+  letter-spacing: 3px;
+  padding: 20px;
+  background-color: #AFEEEE;
+  text-align: center;
+  font-weight: bold;
+}
+
+div img{
+  display: block; 
+  margin: auto;
+}
+
+.font{
+  line-height:2em;
+}
+
+h2{
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 600;
+  font-variant: small-caps;
+  color:#7FFF00;
+}
+
+a{
+  background-color: #F5FFFA;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  text-decoration: none;
+}
